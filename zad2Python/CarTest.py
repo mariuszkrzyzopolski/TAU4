@@ -44,10 +44,10 @@ class CarTest(unittest.TestCase):
 
     def test_other_make_list(self):
         car = Car(2012, "BMW")
-        assert_that(car.get_make()).is_not_in("toyota", "Ford")
+        assert_that(car.get_make()).is_not_in("Toyota", "Ford")
 
     def test_other_make_contains_only(self):
-        car = Car(2012, "Toyota")
+        car = Car(2012, "toyota")
         assert_that(car.get_make()).contains_only("t", "o", "y", "a")
 
     def tearDown(self):
