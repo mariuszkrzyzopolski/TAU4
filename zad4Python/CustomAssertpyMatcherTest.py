@@ -39,5 +39,4 @@ class CustomAssertpyMatcherTests(unittest.TestCase):
         car = Car(2002, "Toyota")
         for _ in range(15):
             car.accelerate()
-        print(car.get_speed())
         assert_warn(car.get_speed()).have_legal_speed_in_town()
